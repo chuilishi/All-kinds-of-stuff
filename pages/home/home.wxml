@@ -1,0 +1,30 @@
+
+<van-search 
+  value="{{ value }}" 
+  placeholder="{{goods_number}}件商品正在售卖中" 
+  left-icon="search" 
+  shape="round"
+/>
+<view class="main">
+  <van-sidebar active-key="{{ activeKey }}">
+    <van-sidebar-item title="aa" />
+    <van-sidebar-item title="服装" />
+  </van-sidebar> 
+  <scroll-view scroll-y class="scroll-view">
+    <view wx:for="{{all_activeKey}}">
+      <block wx:if="{{index==activeKey}}">
+        <view wx:for="{{item}}" wx:for-item="a">
+          <van-card
+          num="{{all[index].num}}"
+          price="{{all[index].price}}"
+          desc="{{all[index].desc}}"
+          title="{{all[index].title}}"
+          thumb="{{all[index].thumb}}"
+          lazy-load="true"
+          thumb-mode="aspectFit"
+        />
+      </view>
+    </block>
+    </view>
+  </scroll-view>
+</view>

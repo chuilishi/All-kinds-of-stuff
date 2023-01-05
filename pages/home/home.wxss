@@ -1,0 +1,8 @@
+/* pages/home/home.wxss */
+.scroll-view{
+  height: 1000rpx;
+}
+.main{
+  display: flex;
+  flex-direction: row;
+}
