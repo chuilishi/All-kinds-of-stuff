@@ -1,0 +1,5 @@
+<!--component/border_radius_field/border_radius_field.wxml-->
+<view class="main" style="background-color: rgba({{rgba}});" bindtap="onChange" url="{{url}}">
+  <van-icon name="{{iconName}}" class="icon" size="150rpx" info="{{number}}"/>
+  <text class="text">{{text}}</text>
+</view>

@@ -1,1 +1,43 @@
 /* pages/mine/mine.wxss */
+.information{
+  background-color:rgb(240,240,240);
+  padding: 20rpx;
+  display: flex;
+}
+.headImage{
+  border-radius: 50%;
+}
+.rightInformation{
+  width: 500rpx;
+  margin: 20rpx;
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  justify-content: center;
+}
+.leftInformation{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.text1{
+  position: fixed;
+  top: 10rpx;
+  margin: 20rpx;
+  margin-left: 60rpx;
+}
+.text2{
+  position: fixed;
+  top:80rpx;
+  margin: 20rpx;
+  margin-left: 60rpx;
+}
+.button{
+  height: 70rpx;
+  display: flex;
+  top: 70rpx;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(135, 211, 255);
+}

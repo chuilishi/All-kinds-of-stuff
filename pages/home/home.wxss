@@ -1,8 +1,15 @@
 /* pages/home/home.wxss */
 .scroll-view{
-  height: 1000rpx;
+  height: 976rpx;
+  padding: 10rpx;
+  background-color: #dbdbdb;
 }
 .main{
   display: flex;
   flex-direction: row;
+}
+.card{
+  border-radius: 30rpx !important;
+  background-color: seashell;
+  margin-bottom: 10rpx;
 }

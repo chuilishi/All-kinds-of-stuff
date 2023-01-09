@@ -1,0 +1,14 @@
+/* pages/announce/announce.wxss */
+page{
+  background-color: rgb(240, 240, 240);
+}
+.introduce{
+  height: 200rpx;
+}
+.button{
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: space-evenly;
+}

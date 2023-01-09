@@ -1,0 +1,40 @@
+<!--pages/goods/goods.wxml-->
+<swiper class="swiper">
+  <swiper-item class="swiperItem">
+    <image src="/images/goods/deco_level_14.png" mode="heightFix"/>
+  </swiper-item>
+  <swiper-item  class="swiperItem">
+    <image src="/images/goods/deco_level_19.png" mode="heightFix"/>
+  </swiper-item>
+  <swiper-item class="swiperItem">
+    <image src="/images/goods/galaxy_layer_0.png" mode="heightFix"/>
+  </swiper-item>
+</swiper>
+<view class="underSwiper">
+  <view class="price_info">
+    <view class="price">
+    ¥300
+  </view>
+  <view class="title">
+    最热最新慢摇
+  </view>
+  <view class="information">
+    地址:莞华12栋
+  </view>
+  </view>
+  
+  <view class="buttonParents" style="position: fixed; bottom: 0;">
+    <view class="leftbutton">
+      <van-icon name="chat" size="40rpx" class="leftIcon" color="green"/>
+      <text class="leftText">联系卖家</text>
+
+    </view>
+    <view class="rightbutton">
+      
+      <van-icon name="star" size="40rpx" class="leftIcon" color="red"/>
+      <text class="rightText">收藏</text>
+
+    </view>
+  </view>
+</view>
+

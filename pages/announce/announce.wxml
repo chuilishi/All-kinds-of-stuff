@@ -1,0 +1,28 @@
+<!--pages/announce/announce.wxml-->
+<van-cell-group >
+  <van-field
+    placeholder="描述商品,勿出现敏感个人信息"
+    value="{{announce[0]}}"
+    border="{{ true }}"
+    bind:blur="onChange"
+    label="商品介绍"
+    size="large"
+    autosize
+    type="textarea"
+    data-source="0"
+  />
+  <van-field
+    value="{{ announce[1] }}"
+    placeholder="请输入价格"
+    border="{{ true }}"
+    bind:blur="onChange"
+    label="定价"
+    size="large"
+    data-source="1"
+  />
+</van-cell-group>
+<view class="button" style="background-color: #F0F0F0;">
+  <van-button round type="danger">保存退出</van-button>
+  <van-button round type="primary">立即发布</van-button>
+</view>
+

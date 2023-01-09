@@ -16,7 +16,7 @@ Page({
   onLoad(options) {
     this.storeBindings= createStoreBindings(this,{
       store,
-      fields:['active','search_value','pages','goods_number','activeKey','all','all_activeKey'],
+      fields:['active','search_value','pages','goods_number','activeKey','thumblink','all'],
       actions:['pageChange','activeKeyChange']
     })
   },

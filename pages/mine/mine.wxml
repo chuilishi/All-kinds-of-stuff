@@ -1,2 +1,20 @@
 <!--pages/mine/mine.wxml-->
-<text>pages/mine/mine.wxml</text>
+<view class="information">
+  <view class="leftInformation">
+    <image src="/images/头像.png" mode="aspectFit" style="width: 150rpx;height: 150rpx;" class="headImage "></image>
+    <text style="font-weight: bolder;">锤力士</text>
+  </view>
+  <view class="rightInformation">
+    <view>
+      <text class="text1">地址:莞管社区第114514栋</text>
+      <text class="text2">微信号:1919810</text>
+    </view>
+    <button class="button">修改</button>
+  </view>
+
+</view>
+
+<field iconName="add" text="我要发布" rgba="255,0,0,0.5" url="/pages/announce/announce"></field>
+<field iconName="/images/待支付.png" number="999" text="待完成" url="/pages/toBeCompleted/toBeCompleted" rgba="0,255,0,0.5"></field>
+<field iconName="clock" text="已完成" url="/pages/history/history" rgba="0,0,255,0.5"></field>
+<field iconName="smile" text="联系客服" url="/pages/serve/serve" rgba="200,200,200,0.5"></field>

@@ -1,19 +1,32 @@
 // custom-tab-bar/index.js
-import {createStoreBindings} from 'mobx-miniprogram-bindings'
-import {store} from '../store/store'
+import {storeBindingsBehavior} from 'mobx-miniprogram-bindings'
+import {store} from '../store/store.js'
 Component({
-  lifetimes:{
-    created:function(){
-      this.storeBindings= createStoreBindings(this,{
-        store,
-        fields:['active','search_value','pages','goods_number'],
-        actions:['pageChange']
-      })
+  behaviors:[storeBindingsBehavior],
+  storeBindings:{
+    store,
+    fields:{
+      active:'active',
+      search_value:'search_value',
+      pages:'pages',
+      goods_number:'goods_number'
     },
-    detached:function(){
-      this.storeBindings.distroyStoreBindings()
+    actions:{
+      pageChange:'pageChange'
     }
   },
+  // lifetimes:{
+  //   created:function(){
+  //     this.storeBindings= createStoreBindings(this,{
+  //       store,
+  //       fields:['active','search_value','pages','goods_number'],
+  //       actions:['pageChange']
+  //     })
+  //   },
+  //   detached:function(){
+  //     this.storeBindings.distroyStoreBindings()
+  //   }
+  // },
   
   /**
    * 组件的属性列表
