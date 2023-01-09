@@ -9,11 +9,7 @@ import {action, observable} from 'mobx-miniprogram'
       "",
       "0"
     ],
-    pages:[
-      "/pages/home/home",
-      "/pages/mine/mine"
-    ],
-
+    activeKey_goods:['total','clothes','electron'],
     all:[
       {
         num:"2",
@@ -21,14 +17,14 @@ import {action, observable} from 'mobx-miniprogram'
         desc:"半价出",
         title:"戴尔笔记本",
         thumb:"/pages/goods/goods",
-        type="clothes"
+        type:"clothes"
       },{
         num:"2",
         price:"6666.00",
         desc:"半价出",
         title:"小米笔记本",
         thumb:"/images/89.png",
-        type="electron"
+        type:"electron"
       }
     ], 
 

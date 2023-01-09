@@ -7,7 +7,7 @@ App({
     wx.setStorageSync('logs', logs)
     
     //初始化store
-    
+
     // 登录
     wx.login({
       success: res => {
@@ -17,5 +17,10 @@ App({
   },
   globalData: {
     userInfo: null,
+    activeKey: 0,
+    pages:[
+      "/pages/home/home",
+      "/pages/mine/mine"
+    ],
   }
 })

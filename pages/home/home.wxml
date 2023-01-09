@@ -6,14 +6,14 @@
   shape="round"
 />
 <view class="main">
-  <van-sidebar active-key="{{ activeKey }}">
+  <van-sidebar active-key="{{ activeKey }}" bind:change="onChange">
     <van-sidebar-item title="全部"/>
     <van-sidebar-item title="服装" />
     <van-sidebar-item title="电子"/>
   </van-sidebar> 
   <scroll-view scroll-y class="scroll-view">
     <view wx:for="{{all}}" wx:key="index">
-      <block wx:if="{{index==activeKey}}">
+      <block wx:if="{{item.type==activeKey_goods[activeKey+1]}}">
           <van-card 
           num="{{item.num}}"
           price="{{item.price}}"

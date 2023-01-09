@@ -1,33 +1,6 @@
-// custom-tab-bar/index.js
-import {storeBindingsBehavior} from 'mobx-miniprogram-bindings'
-import {store} from '../store/store.js'
+// custom-tab-bar/custom-tab-bar.js
+var app=getApp();
 Component({
-  behaviors:[storeBindingsBehavior],
-  storeBindings:{
-    store,
-    fields:{
-      active:'active',
-      search_value:'search_value',
-      pages:'pages',
-      goods_number:'goods_number'
-    },
-    actions:{
-      pageChange:'pageChange'
-    }
-  },
-  // lifetimes:{
-  //   created:function(){
-  //     this.storeBindings= createStoreBindings(this,{
-  //       store,
-  //       fields:['active','search_value','pages','goods_number'],
-  //       actions:['pageChange']
-  //     })
-  //   },
-  //   detached:function(){
-  //     this.storeBindings.distroyStoreBindings()
-  //   }
-  // },
-  
   /**
    * 组件的属性列表
    */
@@ -39,19 +12,20 @@ Component({
    * 组件的初始数据
    */
   data: {
-
+    active:0
   },
 
   /**
    * 组件的方法列表
    */
   methods: {
-    onChange(event) {
-      // event.detail 的值为当前选中项的索引
+    onChange(event){
       wx.switchTab({
-        url: this.data.pages[event.detail],
+        url: app.globalData.pages[event.detail]
+      });
+      this.setData({
+        active:event.detail
       })
-      this.pageChange(event.detail)
     }
-  },
+  }
 })

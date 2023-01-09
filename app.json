@@ -1,18 +1,19 @@
 {
-  "pages":[
+  "pages": [
     "pages/home/home",
     "pages/mine/mine",
     "pages/goods/goods",
     "pages/announce/announce",
     "pages/toBeCompleted/toBeCompleted",
     "pages/history/history",
-    "pages/serve/serve"
+    "pages/serve/serve",
+    "custom-tab-bar/index"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#0BC899",
     "navigationBarTitleText": "莞工二手",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json",
@@ -24,21 +25,21 @@
     "van-search": "@vant/weapp/search/index",
     "van-card": "@vant/weapp/card/index",
     "van-icon": "@vant/weapp/icon/index",
-    "van-field":"@vant/weapp/field/index",
-    "van-button":"@vant/weapp/button/index",
+    "van-field": "@vant/weapp/field/index",
+    "van-button": "@vant/weapp/button/index",
     "field": "/component/border_radius_field/border_radius_field"
   },
   "tabBar": {
     "custom": true,
     "list": [
       {
-      "pagePath": "pages/home/home",
-      "text": "wtf"
-    },
-    {
-      "pagePath": "pages/mine/mine",
-      "text": "dont"
-    }
-  ]
+        "pagePath": "pages/home/home",
+        "text": "wtf"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "dont"
+      }
+    ]
   }
 }

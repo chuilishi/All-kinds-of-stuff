@@ -1,22 +1,25 @@
 // pages/home/home.js
 import {createStoreBindings} from 'mobx-miniprogram-bindings'
 import {store} from '../../store/store'
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    
-  },
 
+  },
+  onChange(event){
+    this.activeKeyChange(event.detail)
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
     this.storeBindings= createStoreBindings(this,{
       store,
-      fields:['active','search_value','pages','goods_number','activeKey','thumblink','all'],
+      fields:['active','search_value','pages','goods_number','thumblink','all','activeKey_goods','activeKey'],
       actions:['pageChange','activeKeyChange']
     })
   },
